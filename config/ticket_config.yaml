@@ -5,7 +5,7 @@ set:
   # - 2018-01-06
   # - 2018-01-07
   station_dates:
-    - "2019-01-18"
+    - "2019-02-12"
 
   # 是否根据时间范围 和 乘车类型 购票
   # 否则将需要手动填写车次
@@ -30,15 +30,14 @@ set:
   # - "G1353"
   # - "G1329"
   station_trains:
-    - "G6153"
-    - "G6184"
-    - "G6173"
+    - "T3037"
+    - "G4013"
 
   # 出发城市，比如深圳北，就填深圳就搜得到
-  from_station: "邵阳"
+  from_station: "北京"
 
   # 到达城市 比如深圳北，就填深圳就搜得到
-  to_station: "深圳北"
+  to_station: "石家庄"
 
   # 座位(list) 多个座位ex:
   # - "商务座"
@@ -52,6 +51,8 @@ set:
   # - "动卧"
   set_type:
   - "二等座"
+  - "硬座"
+  - "无座"
 
   # 当余票小于乘车人，如果选择优先提交，则删减联系人和余票数一致在提交
   is_more_ticket: False
@@ -60,26 +61,26 @@ set:
   # - "张三"
   # - "李四"
   ticke_peoples:
-    - ""
+    - "冯亚静"
 
   # 12306登录账号(list)
   12306account:
-    - user: "qqxin1011"
+    - user: ""
     - pwd: ""
 
 # 加入小黑屋时间默认为5分钟，此功能为了防止僵尸票导致一直下单不成功错过正常的票，
 ticket_black_list_time: 5
 
 # 自动打码
-is_auto_code: True
+is_auto_code: False
 
 # 打码平台， 2 为若快平台（目前只支持若快平台打码，打码兔已经关闭）, 若快注册地址：http://www.ruokuai.com/client/index?6726
 auto_code_type: 2
 
 # 打码平台账号
 auto_code_account:
-  user: "931128603"
-  pwd: "wen1995"
+  user: "pengfeishan"
+  pwd: "yajingfeng"
 
 #  邮箱配置，如果抢票成功，将通过邮件配置通知给您
 #  列举163
@@ -95,7 +96,7 @@ auto_code_account:
 #  password: "授权码"
 #  host: "smtp.qq.com"
 email_conf:
-  is_email: True
+  is_email: False
   email: "931128603@qq.com "
   notice_email_list: "931128603@qq.com"
   username: "931128603"
